@@ -23,12 +23,6 @@ body
    box-sizing: border-box;
    margin: 0;
 }
-#PageHeader
-{
-   -webkit-transition: all 500ms linear 0ms;
-   -moz-transition: all 500ms linear 0ms;
-   transition: all 500ms linear 0ms;
-}
 #Table1
 {
    border: 2px solid transparent;
