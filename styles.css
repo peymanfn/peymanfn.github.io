@@ -1,0 +1,220 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav.top-nav ul li {
+    margin-right: 20px;
+}
+
+nav.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav.top-nav a:hover {
+    background-color: #555;
+}
+
+.main-content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    text-align: left;
+    max-width: 60%; /* Adjust the width as needed */
+}
+
+.profile-pic {
+    flex-shrink: 0;
+    width: 200px; /* Adjust the width of the profile picture */
+    height: 200px; /* Make it a square */
+    overflow: hidden;
+    border-radius: 50%;
+}
+.paper-pic {
+    flex-shrink: 0;
+    width: 300px; /* Adjust the width of the profile picture */
+    height: 300px; /* Make it a square */
+    overflow: hidden;
+}
+.paper-pic img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.project-nav {
+    position: relative;
+    margin-top: 40px;
+    background-color: #f45d42; /* Background color for better readability */
+    overflow-x: auto;
+}
+
+.project-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the projects in the navigator */
+    gap: 10px;
+}
+
+.project-nav li {
+    margin-right: 10px;
+}
+
+.project-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-nav a:hover {
+    background-color: #3367d6; /* Change to your desired hover color */
+}
+/* ... (previous CSS styles) */
+
+.project-window {
+    display: flex;
+    overflow: hidden;
+    margin: 20px auto; /* Center the project window horizontally */
+}
+
+.project {
+    width: 60%;
+    margin-right: 40px;
+    margin-left: 100px;
+    transition: transform 0.3s ease; /* Add smooth transition for sliding effect */
+    display: none;
+    max-width: 1200px; /* Set a maximum width for the project window */
+    margin: 0 auto; /* Center the project within the window */
+}
+
+/* ... (remaining CSS styles) */
+
+.project-window h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.project-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.project img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px; /* Optional: Add a border radius to the project photos */
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.project p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Navigation Icons */
+.nav-icon {
+    font-size: 24px;
+    color: #4285f4; /* Color for the navigation icons */
+    cursor: pointer;
+}
+
+.project-nav a.active {
+    background-color: #3367d6; /* Highlight the active project in the navigator */
+}
+
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 50px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+footer .footer-content {
+    flex-direction: row; /* Adjusted for horizontal layout */
+    justify-content: center; /* Centered horizontally */
+    align-items: center; /* Centered vertically */
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
