@@ -62,7 +62,7 @@ nav.top-nav a:hover {
 
 .description {
     text-align: left;
-    max-width: 80%; /* Adjust the width as needed */
+    max-width: 75%; /* Adjust the width as needed */
 }
 .description_profile {
     text-align: left;
@@ -77,8 +77,8 @@ nav.top-nav a:hover {
 }
 .paper-pic {
     flex-shrink: 0;
-    width: 150px; /* Adjust the width of the profile picture */
-    height: 150px; /* Make it a square */
+    width: 200px; /* Adjust the width of the profile picture */
+    height: 200px; /* Make it a square */
     overflow: hidden;
 }
 .paper-pic img {
@@ -228,6 +228,12 @@ footer {
         height: 100px; /* Make it a square */
         border-radius: 100%;
     }
+    .paper-pic {
+        flex-shrink: 0;
+        width: 150px; /* Adjust the width of the profile picture */
+        height: 150px; /* Make it a square */
+        overflow: hidden;
+    }
     .project-description {
         flex-direction: column; /* Stack project description vertically on small screens */
     }
@@ -239,7 +245,15 @@ footer {
     .content-wrapper {
         flex-direction: column; /* Stack project description vertically on small screens */
     }
-
+    nav.top-nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 1px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
     .project img {
         width: 100%; /* Full width on small screens */
         margin-right: 0; /* Remove right margin on small screens */
