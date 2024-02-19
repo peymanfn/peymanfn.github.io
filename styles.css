@@ -62,20 +62,23 @@ nav.top-nav a:hover {
 
 .description {
     text-align: left;
-    max-width: 60%; /* Adjust the width as needed */
+    max-width: 80%; /* Adjust the width as needed */
 }
-
+.description_profile {
+    text-align: left;
+    max-width: 100%; /* Adjust the width as needed */
+}
 .profile-pic {
     flex-shrink: 0;
-    width: 200px; /* Adjust the width of the profile picture */
-    height: 200px; /* Make it a square */
+    width: 150px; /* Adjust the width of the profile picture */
+    height: 150px; /* Make it a square */
     overflow: hidden;
     border-radius: 50%;
 }
 .paper-pic {
     flex-shrink: 0;
-    width: 300px; /* Adjust the width of the profile picture */
-    height: 300px; /* Make it a square */
+    width: 150px; /* Adjust the width of the profile picture */
+    height: 150px; /* Make it a square */
     overflow: hidden;
 }
 .paper-pic img {
@@ -125,11 +128,7 @@ nav.top-nav a:hover {
 }
 /* ... (previous CSS styles) */
 
-.project-window {
-    display: flex;
-    overflow: hidden;
-    margin: 20px auto; /* Center the project window horizontally */
-}
+
 
 .project {
     width: 60%;
@@ -139,6 +138,22 @@ nav.top-nav a:hover {
     display: none;
     max-width: 1200px; /* Set a maximum width for the project window */
     margin: 0 auto; /* Center the project within the window */
+}
+.project-nav ul {
+    flex-wrap: wrap; /* Allow navigation items to wrap on small screens */
+    justify-content: center;
+}
+
+.project-window {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically on small screens */
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.project {
+    width: 100%; /* Full width on small screens */
+    margin-right: 0; /* Remove right margin on small screens */
 }
 
 /* ... (remaining CSS styles) */
@@ -208,13 +223,34 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .profile-pic {
+        width: 100px; /* Adjust the width of the profile picture */
+        height: 100px; /* Make it a square */
+        border-radius: 100%;
+    }
+    .project-description {
+        flex-direction: column; /* Stack project description vertically on small screens */
+    }
+    .description {
+        flex-direction: column; /* Stack project description vertically on small screens */
+        text-align: left;
+        max-width: 100%; /* Adjust the width as needed */
+    }
+    .content-wrapper {
+        flex-direction: column; /* Stack project description vertically on small screens */
+    }
 
-footer .footer-content {
-    flex-direction: row; /* Adjusted for horizontal layout */
-    justify-content: center; /* Centered horizontally */
-    align-items: center; /* Centered vertically */
-}
+    .project img {
+        width: 100%; /* Full width on small screens */
+        margin-right: 0; /* Remove right margin on small screens */
+    }
 
-footer .social-links {
-    margin-top: 10px;
+    footer .footer-content {
+        flex-direction: column; /* Stack footer content vertically on small screens */
+        align-items: center;
+    }
+
+    footer .social-links {
+        margin-top: 10px;
+    }
 }
